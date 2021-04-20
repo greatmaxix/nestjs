@@ -9,9 +9,6 @@ services:
       POSTGRES_PASSWORD: root
       POSTGRES_DB: taskmanagement
     ports:
-      - "5432:5432"
-#       volumes:
-#         - $HOME/Desktop/PostgreSql-Snippets/infile:/infile
-#         - pg_data:/var/lib/postgresql/data/
-# volumes:
-#   pg_data:
+      - "5433:5432"
+    volumes:
+      - ./pg_data:/var/lib/postgresql/data/
